@@ -1,0 +1,8 @@
+(ido-mode t)
+(setq ido-enable-flex-matching t)
+(when (fboundp 'scroll-bar-mode) (tool-bar-mode -1))
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+(require 'saveplace)
+(setq-default saveplace t)
+(global-set-key (kbd "M-/") 'hippie-expand)
